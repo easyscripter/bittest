@@ -1,0 +1,10 @@
+.container {
+    background-color: #E0F1FF;
+    height: 100vh;
+}
+.widgetListContainer {
+    display: flex;
+    top: 50px;
+    right: 20px;
+    left: 0;
+}

@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header';
+import { Routes, Route, BrowserRouter } from "react-router-dom"
+import Panel from './pages/Panel/Panel';
+import Sidebar from './components/Sidebar/Sidebar';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <BrowserRouter>
+        <Header
+          title='Энергия'
+          logo='/assets/images/logo.svg'
         >
-          Learn React
-        </a>
-      </header>
+        </Header>
+        <div style={{display: 'flex'}}>
+          <Sidebar/>  
+          <div style={{flex: 2}}>
+            <Routes>
+              <Route path='/panel' Component={Panel}/>
+            </Routes>
+          </div>
+        </div>
+
+      </BrowserRouter>
     </div>
   );
 }

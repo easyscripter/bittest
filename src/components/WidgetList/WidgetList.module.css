@@ -1,0 +1,10 @@
+.container {
+    width: 300px;
+    height: 80vh;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 95, 184, 0.5);
+    border-radius: 20px;
+}
+.hidden {
+    display: none;
+}
