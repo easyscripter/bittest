@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.titleContainer {
+    background-color: #005FB8;
+    color: white;
+    padding: 5px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
