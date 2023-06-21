@@ -13,9 +13,9 @@ const App = () => {
           logo='/assets/images/logo.svg'
         >
         </Header>
-        <div style={{display: 'flex'}}>
+        <div style={{display: 'flex', height: '93vh'}}>
           <Sidebar/>  
-          <div style={{flex: 2}}>
+          <div style={{width: '100%'}}>
             <Routes>
               <Route path='/panel' Component={Panel}/>
             </Routes>
