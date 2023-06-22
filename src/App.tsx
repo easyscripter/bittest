@@ -13,7 +13,7 @@ const App = () => {
       <BrowserRouter>
         <Header
           title='Энергия'
-          logo='/assets/images/logo.svg'
+          logo='logo.svg'
           onShowMobileSidebar={() => setIsShowBar(prevState => !prevState)}
         >
         </Header>
