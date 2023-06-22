@@ -5,7 +5,11 @@ import style from './Sidebar.module.css';
 import { useMemo } from 'react';
 import { MdDensitySmall } from 'react-icons/md';
 
-const Sidebar = () => {
+type SidebarPropsType = {
+    isShow: boolean;
+}
+
+const Sidebar: React.FC<SidebarPropsType> = ({isShow}) => {
     const {pathname} = useLocation();
     const routes = useMemo<Array<RouteType>>(() => [
         {
@@ -16,7 +20,7 @@ const Sidebar = () => {
         }
     ], [pathname]);
     return ( 
-        <div className={style.container}>
+        <div className={`${style.container} ${isShow && style.show}`}>
             <div className={style.sidebarList}>
                 {routes.map(item => (
                     <SidebarItem key={item.label} {...item}/>
