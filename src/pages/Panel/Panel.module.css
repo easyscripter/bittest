@@ -5,6 +5,7 @@
 }
 .widgetListContainer {
     position: absolute;
+    z-index: 22;
     top: 10px;
     right: 10px;
     display: flex;
@@ -19,8 +20,10 @@
     color: #005FB8;
 }
 .dragsContainer {
+    position: relative;
     height: 100%;
     display: grid;
+    padding: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;

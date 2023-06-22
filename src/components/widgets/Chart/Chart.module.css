@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+}
+.titleContainer {
+    background-color: #005FB8;
+    color: white;
+    padding: 5px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
